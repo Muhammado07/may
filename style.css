@@ -1400,6 +1400,11 @@ feed-body .center-feed .product-tabss {
   padding: 10px 0 0;
 }
 
+@media screen and (max-width: 767px) {
+  .topics .boxs .box .box-details .box-info {
+    padding: 0;
+   }
+}
 
   /* Arabic */
   .tabby-ar {

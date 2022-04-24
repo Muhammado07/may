@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product</title>
+  </head>
+  <body>
+    <div class="product-details">
+      <div class="product-bank">
+        <img src="img/tabby/tabby-logo-en.svg" alt="Taby" />
+        <p>
+          4 interest-free payments of
+          <span class="divi-interest">SR 362.25</span>
+          <a href="tabby-en.html" target="_blank"> Learn more.</a>
+        </p>
+      </div>
+    </div>
+    <div class="order-bank">
+      <div class="bank-box">
+        <img src="img/icons/bank.svg" loading="lazy" alt="York Bank" />
+        <p>
+          Buy now, pay later. Check our installment plans.<a
+            href="bank-installments.html"
+            class="show-pays"
+          >
+            View more details.</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="feed-popup pay-later">
+      <div class="container">
+        <div class="flex-feed">
+          <div class="pop-divid">
+            <div class="give-feed">
+              <div class="feed-head">
+                <img
+                  src="img/icons/close.svg"
+                  loading="lazy"
+                  alt="Close"
+                  class="close-feed"
+                />
+              </div>
+              <div class="feed-body">
+                <div class="center-feed widy">
+                  <div class="product-tabss">
+                    <div class="btn-container">
+                      <img
+                        src="img/icons/rajhi.svg"
+                        class="tab-btn active"
+                        data-id="rajhi"
+                        alt="rajhi"
+                      />
+                      <img
+                        src="img/icons/ahly.svg"
+                        class="tab-btn"
+                        data-id="ahly"
+                        alt="ahly"
+                      />
+                      <img
+                        src="img/icons/riyad-bank.svg"
+                        class="tab-btn"
+                        data-id="riyad-bank"
+                        alt="Riyad Bank"
+                      />
+                    </div>
+                    <div class="btn-dvidier">
+                      <div class="content active" id="rajhi">
+                        <div class="tablee">
+                          <table class="bank-interest">
+                            <thead>
+                              <tr>
+                                <th>Months</th>
+                                <th>Interest</th>
+                                <th>Processing fee</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>3</td>
+                                <td>0%</td>
+                                <td>SAR 0</td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td>0%</td>
+                                <td>SAR 0</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="content" id="ahly">
+                        <div class="tablee">
+                          <table class="bank-interest">
+                            <thead>
+                              <tr>
+                                <th>Months</th>
+                                <th>Interest</th>
+                                <th>Processing fee</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>3</td>
+                                <td>0%</td>
+                                <td>SAR 0</td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td>0%</td>
+                                <td>SAR 0</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="content" id="riyad-bank">
+                        <div class="tablee">
+                          <table class="bank-interest">
+                            <thead>
+                              <tr>
+                                <th>Months</th>
+                                <th>Interest</th>
+                                <th>Processing fee</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>3</td>
+                                <td>0%</td>
+                                <td>SAR 0</td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td>0%</td>
+                                <td>SAR 0</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="feed-footer">
+                <a href="bank-installments.html" target="_blank"
+                  >More information</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Pop-up Selection Tabs
+      const productTabs1 = document.querySelector(".product-tabss");
+      const btns1 = document.querySelectorAll(".product-tabss .tab-btn");
+      const content1 = document.querySelectorAll(".product-tabss .content");
+      const shows1 = document.querySelectorAll(".shows");
+
+      productTabs1.addEventListener("click", function (e) {
+        const id = e.target.dataset.id;
+        if (id) {
+          btns1.forEach(function (btn) {
+            btn.classList.remove("active");
+            e.target.classList.add("active");
+          });
+          content1.forEach(function (item) {
+            item.classList.remove("active");
+            const element = document.getElementById(id);
+            element.classList.add("active");
+          });
+        }
+      });
+
+      // Feedback Popup
+
+      const showPays = document.querySelector(".show-pays");
+      const openFeed = document.querySelector(".feed-popup");
+      const closeFeed = document.querySelector(".close-feed");
+
+      showPays.addEventListener("click", function (e) {
+        e.preventDefault();
+        openFeed.classList.add("view");
+        document.body.style.overflowY = "hidden";
+      });
+      closeFeed.addEventListener("click", function (e) {
+        e.preventDefault();
+        openFeed.classList.remove("view");
+        document.body.style.overflowY = "scroll";
+      });
+    </script>
+  </body>
+</html>

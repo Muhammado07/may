@@ -1373,6 +1373,14 @@ feed-body .center-feed .product-tabss {
   textarea.review {
     margin-top: 10px;
   }
+  .banks-tables.terms .termsTable .tableData:nth-child(1),
+  .banks-tables.terms .termsTable .tableData:nth-child(1) img,
+  .bank-faq .banks-tables.terms .termsTable .tableData:nth-child(1) {
+    width: 45%;
+  }
+  .terms .termsTable .tableColumns, .terms .termsTable .tableData {
+    padding: 10px 0;
+  }
 }
 
 @media screen and (max-width: 321px) {

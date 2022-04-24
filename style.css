@@ -615,13 +615,7 @@ input {
       .tabby-app {
         padding-bottom: 30px;
       }
-
-      @media screen and (max-width: 767px) {
-        .tabby-promo section {
-            padding-left: 0;
-            padding-right: 0;
-        }
-      }
+      
       /* =============================
     ======= FAQ ===============
     ============================ */
@@ -1405,6 +1399,7 @@ feed-body .center-feed .product-tabss {
 .faq input:checked ~ .tab-content.tab-uly {
   padding: 10px 0 0;
 }
+
 
   /* Arabic */
   .tabby-ar {

@@ -996,6 +996,8 @@ input {
     height: auto;
     overflow-y: hidden;
     opacity: 0.9;
+  }
+  .topics .boxs .box:nth-child(1) .box-details .box-info p {
     padding-top: 15px;
   }
   .about-york .about-head {

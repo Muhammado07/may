@@ -992,7 +992,7 @@ input {
   .topics .boxs .box .box-details .box-info p {
     font-weight: 300;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     height: auto;
     overflow-y: hidden;
     opacity: 0.9;
@@ -1399,7 +1399,10 @@ feed-body .center-feed .product-tabss {
 .faq input:checked ~ .tab-content.tab-uly {
   padding: 10px 0 0;
 }
-
+.product-tabss .tablee .bank-interest thead tr th:last-of-type,
+.tabby-ar .product-tabss .tablee .bank-interest thead tr, .tabby-ar .product-tabss .tablee .bank-interest thead tr th:last-of-type, .product-tabss .tablee .bank-interest tbody tr td:last-of-type {
+  text-align: left;
+}
 @media screen and (max-width: 767px) {
   .topics .boxs .box .box-details .box-info {
     padding: 0;
@@ -1418,4 +1421,14 @@ feed-body .center-feed .product-tabss {
   }
   .tabby-ar .faq .tab-content p {
     font-size: 18px;
+  }
+  .tabby-ar .product-tabss .tablee .bank-interest thead tr,
+  .tabby-ar .product-tabss .tablee .bank-interest thead tr th:last-of-type, .tabby-ar .tabby-ar .product-tabss .tablee .bank-interest thead tr, .tabby-ar .product-tabss .tablee .bank-interest thead tr th:last-of-type, .tabby-ar .product-tabss .tablee .bank-interest tbody tr td:last-of-type {
+    text-align: right;
+  }
+  .tabby-ar .feed-popup .pop-divid .give-feed .feed-head {
+    justify-content: flex-start;
+  }
+  .tabby-ar .product-details .product-bank img {
+    margin-left: 10px;
   }

@@ -996,6 +996,7 @@ input {
     height: auto;
     overflow-y: hidden;
     opacity: 0.9;
+    padding-top: 15px;
   }
   .about-york .about-head {
     margin-top: 20px;
@@ -1107,6 +1108,7 @@ input {
 }
 .order-bank .bank-box p a {
   color: var(--first-color);
+  font-weight: bold;
 }
 
 
